@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9fbff;
+}
+.Nav > div {
+  margin-inline: auto;
+  padding-inline: 20px;
+  max-width: 1200px;
+}
+
+#Hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  max-height: 1100px;
+  background-image: url(src/assets/images/hero_bg.svg);
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 824px) {
+  #Hero {
+    height: initial;
+  }
+}
+
+
+.MyInfo {
+  position: relative;
+  padding-top: 5px;
+  min-height: 70px;
+  border-radius: 0px 35px 35px 0px;
+  background: linear-gradient(to left, #110d59, #09072d);
+  padding-left: 20px;
+}
+.MyInfo::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #ff6d5a;
+}
+
+.MyEmail {
+  position: relative;
+  padding-top: 5px;
+  min-height: 70px;
+  border-radius: 0px 35px 35px 0px;
+  background: linear-gradient(to left, #110d59, #09072d);
+  padding-left: 20px;
+}
+.MyEmail::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: white;
+  opacity: 0.6;
+}
+@media (max-width: 824px) {
+  .MyInfo::before {
+    left: 10px;
+  }
+  .MyEmail::before {
+    left: 10px;
+  }
+  .tabs-custom > div:first-child > button {
+    padding: 12px;
+  }
+}
+.centerSide::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 900px;
+  background: linear-gradient(180deg, rgba(9, 7, 45, 0) 0%, #09072d 100%);
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.tabs-custom > div:first-child > button {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: #767682;
+  padding: 0;
+}
+
+.tabs-custom > div:first-child > button[aria-selected="true"] {
+  color: #ff6d5a;
+}
+.tabs-custom > div:first-child > button:hover {
+  color: #ff6d5a;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.tabs-custom > div:first-child > button:focus {
+  outline: none;
+}
+.progress {
+  background-color: #d3d0ee !important;
+}
+.progress > :first-child {
+  background: linear-gradient(59deg, #342ead 0%, #ff6d5a 100%);
+}
+.info > :first-child{
+  gap: 10px;
+}
