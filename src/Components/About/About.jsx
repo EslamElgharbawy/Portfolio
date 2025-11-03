@@ -43,9 +43,9 @@ export default function About() {
                           trends and technological advances.
                         </p>
                         <div className="w-fit mt-8 font-Jost">
-                          <div className="bg-[#ff6d5a] rounded-lg md:order-2  md:flex">
+                          <div className="bg-[#ff6d5a] rounded-lg md:order-2 md:flex">
                             <Button className="text-lg font-semibold px-8 h-12 xl:!px-9 xl:!h-14 relative overflow-hidden group focus:ring-0 focus:outline-none">
-                              <span className="flex gap-2 transition-all duration-300 group-hover:-translate-y-10">
+                              <a className="flex justify-center items-center gap-2 transition-all duration-300 group-hover:-translate-y-10">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"
@@ -61,7 +61,7 @@ export default function About() {
                                   />
                                 </svg>
                                 Download CV
-                              </span>
+                              </a>
                               <a
                                 href="public/EslamElgharbawy.pdf"
                                 download

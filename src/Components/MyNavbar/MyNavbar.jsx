@@ -40,13 +40,13 @@ export function MyNavbar() {
             Home
           </NavbarLink>
           <NavbarLink
-            href="#"
+            href="#About"
             className="text-[#b5b5c0] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-200"
           >
             About
           </NavbarLink>
           <NavbarLink
-            href="#"
+            href="#Services"
             className="text-[#b5b5c0] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-200"
           >
             Services
