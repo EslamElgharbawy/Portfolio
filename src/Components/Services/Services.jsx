@@ -13,7 +13,7 @@ export default function Services() {
           </div>
 
           <div>
-            <div className="flex justify-center items-center gap-4 font-Jost">
+            <div className="lg:flex justify-center items-center font-Jost">
               <Card
                 icon={
                   <svg
@@ -31,7 +31,7 @@ export default function Services() {
                     />
                   </svg>
                 }
-                projects={7}
+                projects={6}
                 title={"Web Development"}
                 body={
                   "I build responsive, fast, and modern websites using React, Tailwind CSS, and API integrations"
@@ -54,7 +54,7 @@ export default function Services() {
                     />
                   </svg>
                 }
-                projects={4}
+                projects={5}
                 title={"Responsive Design"}
                 body={
                   "I ensure all websites I build look great on every device — from desktops to smartphones"
@@ -80,7 +80,7 @@ export default function Services() {
                 projects={3}
                 title={"Website Optimization"}
                 body={
-                  "I create clean and interactive UI elements with smooth animations and micro-interactions"
+                  "Improving website speed, accessibility, and SEO for better performance and user experience."
                 }
               />
             </div>
