@@ -7,7 +7,32 @@ import {
 } from "flowbite-react";
 import LetterE from "../../assets/images/Letter E.png";
 import HireButton from "../HireButton/HireButton";
+import { useEffect, useState } from "react";
 export function MyNavbar() {
+  const [active, setactive] = useState("Home");
+  const sections = ["Home", "About", "Services", "Projects", "Contact"];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      let current = active;
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          const offsetTop = section.offsetTop - 100;
+          const height = section.offsetHeight;
+          if (scrollY >= offsetTop && scrollY < offsetTop + height) {
+            current = id;
+          }
+        }
+      });
+      if (current !== active) {
+        setactive(current);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [sections]);
   return (
     <Navbar className="Nav px-0 md:px-4 py-7 bg-transparent absolute top-0 left-0 w-full">
       <NavbarBrand>
@@ -25,44 +50,26 @@ export function MyNavbar() {
         </div>
       </NavbarBrand>
       <div className="flex md:order-2 items-center gap-3">
-       <div className="hidden lg:flex font-Lexend">
-        <HireButton/>
-       </div>
+        <div className="hidden lg:flex font-Lexend">
+          <HireButton />
+        </div>
         <NavbarToggle />
       </div>
 
       <NavbarCollapse className="Navlinks font-Jost py-3">
+        {sections.map((id) => (
           <NavbarLink
-            href="#"
-            active
-            className="text-[#ff6d5a] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-300"
+            key={id}
+            href={`#${id}`}
+            className={`font-normal text-lg transition-all duration-300 ${
+              active == id
+                ? "text-[#ff6d5a]"
+                : "text-[#b5b5c0] hover:text-[#ff6d5a]"
+            }`}
           >
-            Home
+            {id}
           </NavbarLink>
-          <NavbarLink
-            href="#About"
-            className="text-[#b5b5c0] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-200"
-          >
-            About
-          </NavbarLink>
-          <NavbarLink
-            href="#Services"
-            className="text-[#b5b5c0] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-200"
-          >
-            Services
-          </NavbarLink>
-          <NavbarLink
-            href="#"
-            className="text-[#b5b5c0] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-200"
-          >
-            Projects
-          </NavbarLink>
-          <NavbarLink
-            href="#"
-            className="text-[#b5b5c0] font-normal text-lg hover:text-[#ff6d5a] transition-all duration-200"
-          >
-            Contact
-          </NavbarLink>
+        ))}
       </NavbarCollapse>
     </Navbar>
   );

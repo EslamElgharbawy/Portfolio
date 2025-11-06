@@ -19,7 +19,7 @@ body {
   max-width: 1200px;
 }
 
-#Hero {
+#Home {
   width: 100%;
   height: 100vh;
   min-height: 700px;
@@ -32,10 +32,10 @@ body {
 #Services {
   background-image: url("./assets/images/service_bg.png");
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 @media (max-width: 824px) {
-  #Hero {
+  #Home {
     height: initial;
   }
 }
@@ -151,13 +151,13 @@ body {
 .Card_sahdow {
   box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.15);
 }
-.Explore{
+.Explore {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-.Explore::after{
+.Explore::after {
   content: "";
   position: absolute;
   background-color: #e7e6f4;
@@ -188,4 +188,33 @@ body {
 }
 .Card:hover .Explore-icon svg {
   color: white;
+}
+#footer {
+  background-image: url("./assets/images/footer_bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.copyright {
+  padding-block: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: #b5b5c0;
+}
+.copyright::before {
+  content: "";
+  height: 1px;
+  width: 915px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(24, 20, 95, 0) 0%,
+    #211c78 49.48%,
+    rgba(24, 20, 95, 0) 100%
+  );
 }

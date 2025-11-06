@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <>
-      <section id="Hero">
+      <section id="Home">
         <div className="centerSide relative flex justify-center items-center w-full h-full pt-[120px]  lg:pt-[8%] lg:pb-[70px] px-[12px]">
           <img
             src="src/assets/images/upscalemedia-transformed.png"

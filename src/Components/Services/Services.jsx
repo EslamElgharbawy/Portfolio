@@ -3,17 +3,17 @@ import Card from "../Card/Card";
 export default function Services() {
   return (
     <>
-      <section id="Services" className="py-[80px] xl:py-[150px]">
+      <section id="Services" className="py-[80px] xl:py-[150px] sm:max-xl:px-5">
         <div className="xl:mx-[159px]">
           <div className="mb-[72px]">
-            <h1 className="text-5xl font-semibold font-Lexend text-[#12103e]">
+            <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e]">
               How Can
               <span className="text-[#ff6d5a]"> I help you</span>
             </h1>
           </div>
 
           <div>
-            <div className="lg:flex justify-center items-center font-Jost">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:max-xl:gap-4 xl:gap-8 justify-items-center font-Jost">
               <Card
                 icon={
                   <svg
@@ -57,7 +57,7 @@ export default function Services() {
                 projects={5}
                 title={"Responsive Design"}
                 body={
-                  "I ensure all websites I build look great on every device — from desktops to smartphones"
+                  "I ensure all websites I build look great on every device from desktops to smartphones"
                 }
               />
               <Card
@@ -70,11 +70,12 @@ export default function Services() {
                     stroke="currentColor"
                     className="size-8 text-[#342ead]"
                   >
+                    {" "}
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
-                    />
+                    />{" "}
                   </svg>
                 }
                 projects={3}
