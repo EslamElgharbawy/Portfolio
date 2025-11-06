@@ -1,6 +1,6 @@
 import { Button, Progress, TabItem, Tabs } from "flowbite-react";
 import HireButton from "../HireButton/HireButton";
-
+import AboutImage from "../../assets/images/about_img_1.png"
 export default function About() {
   return (
     <>
@@ -10,7 +10,7 @@ export default function About() {
             <div className="xl:w-1/2 px-3">
               <div>
                 <img
-                  src="src/assets/images/about_img_1.png"
+                  src={AboutImage}
                   alt="Eslam ElGahrbawy"
                   className="w-full xl:!w-[570px]"
                 />

@@ -24,7 +24,7 @@ body {
   height: 100vh;
   min-height: 700px;
   max-height: 1100px;
-  background-image: url(src/assets/images/hero_bg.svg);
+  background-image: url('./assets/images/hero_bg.svg');
   position: relative;
   background-position: center center;
   background-size: cover;
