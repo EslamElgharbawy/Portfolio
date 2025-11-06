@@ -1,5 +1,4 @@
 import { Button, Progress, TabItem, Tabs } from "flowbite-react";
-import HireButton from "../HireButton/HireButton";
 import AboutImage from "../../assets/images/about_img_1.png"
 export default function About() {
   return (
