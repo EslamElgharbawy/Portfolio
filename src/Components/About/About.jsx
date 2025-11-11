@@ -62,7 +62,7 @@ export default function About() {
                                 Download CV
                               </a>
                               <a
-                                href="public/EslamElgharbawy.pdf"
+                                href="https://drive.google.com/uc?export=view&id=1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT"
                                 download
                                 className="absolute inset-0 flex gap-2 items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
                               >
