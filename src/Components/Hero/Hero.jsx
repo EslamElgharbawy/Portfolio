@@ -6,7 +6,7 @@ export default function Hero() {
         <div className="centerSide relative flex justify-center items-center w-full h-full pt-[120px]  lg:pt-[8%] lg:pb-[70px] px-[12px]">
           <img
             src={Eslam}
-            alt=""
+            alt="Eslam ElGahrbawy"
             className="h-[500px] object-cover sm:max-md:max-w-[340px] md:max-xl:max-w-[360px]"
           />
           <div className="name absolute sm:bottom-[20px] sm:max-md:bottom-[4%] xl:bottom-[3%] 2xl:bottom-[8%] px-4 text-center z-10">

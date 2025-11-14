@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <section id="footer">
         <div className="xl:mx-[159px] sm:max-md:px-4 md:max-lg:px-3 text-center">
-          <div className="sm:max-lg:py-16 lg:py-20 xl:flex justify-around items-center font-Lexend">
+          {/* <div className="sm:max-lg:py-16 lg:py-20 xl:flex justify-around items-center font-Lexend">
             <div>
               <h1 className="sm:max-lg:text-[46px] lg:max-xl:text-[70px] xl:text-[92px] sm:max-lg:leading-[59px] lg:max-xl:leading-[90px] xl:leading-[119px] sm:max-xl:mb-5 font-semibold bg-gradient-to-l from-[#8b85ff] to-[#ffeae8] bg-clip-text text-transparent ">
                 Have a project?
@@ -22,7 +22,7 @@ export default function Footer() {
                 </span>
               </Button>
             </div>
-          </div>
+          </div> */}
           <div className="copyright font-Jost">
             <p>Designed & Built by Eslam ElGharbawy</p>
           </div>

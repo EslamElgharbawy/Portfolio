@@ -19,7 +19,7 @@ export default function Card({ icon, projects, title, body }) {
             <div className="Explore">
               <p className="text-[#12103e] pr-8">Explore</p>
               <div className="Explore-icon group">
-                <span className="inline-block  transition-all duration-300 group-hover:translate-y-[-20px] group-hover:translate-x-[20px]">
+                <span className="inline-block transition-all duration-300 group-hover:translate-y-[-20px] group-hover:translate-x-[20px]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

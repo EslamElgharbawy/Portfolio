@@ -1,5 +1,5 @@
 import { Button, Progress, TabItem, Tabs } from "flowbite-react";
-import AboutImage from "../../assets/images/about_img_1.png"
+import AboutImage from "../../assets/images/upscalemedia-transformed (2)9.png";
 export default function About() {
   return (
     <>
@@ -7,11 +7,11 @@ export default function About() {
         <div className="xl:mx-[159px]">
           <div className="xl:flex justify-center items-center  lg:max-2xl:mx-10 sm:max-lg:mx-2">
             <div className="xl:w-1/2 px-3">
-              <div>
+              <div className="image_back flex justify-center xl:w-[500px] rounded-tr-3xl rounded-tl-3xl rounded-br-3xl relative">
                 <img
                   src={AboutImage}
                   alt="Eslam ElGahrbawy"
-                  className="w-full xl:!w-[570px]"
+                  className="w-full xl:!w-[430px]"
                 />
               </div>
             </div>
@@ -44,43 +44,16 @@ export default function About() {
                         <div className="w-fit mt-8 font-Jost">
                           <div className="bg-[#ff6d5a] rounded-lg md:order-2 md:flex">
                             <Button className="text-lg font-semibold px-8 h-12 xl:!px-9 xl:!h-14 relative overflow-hidden group focus:ring-0 focus:outline-none">
-                              <a className="flex justify-center items-center gap-2 transition-all duration-300 group-hover:-translate-y-10">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  strokeWidth={2}
-                                  stroke="currentColor"
-                                  className="size-6 "
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                                  />
-                                </svg>
-                                Download CV
+                              <a className="flex justify-center items-center transition-all duration-300 group-hover:-translate-y-10">
+                                View Resume
                               </a>
                               <a
-                                href="https://drive.google.com/uc?export=view&id=1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT"
-                                download
-                                className="absolute inset-0 flex gap-2 items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                                href="/public/EslamElgharbawy.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="absolute inset-0 flex items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
                               >
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  strokeWidth={2}
-                                  stroke="currentColor"
-                                  className="size-6"
-                                >
-                                  <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                                  />
-                                </svg>
-                                Download CV
+                                View Resume
                               </a>
                             </Button>
                           </div>

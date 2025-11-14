@@ -1,4 +1,5 @@
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import { MyNavbar } from "./Components/MyNavbar/MyNavbar";
@@ -12,9 +13,10 @@ function App() {
       </header>
       <main>
         <Hero />
-        <About/>
-        <Services/>
-        <Footer/>
+          <About />
+          <Services />
+          <Contact />
+        <Footer />
       </main>
     </>
   );
