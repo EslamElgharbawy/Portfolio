@@ -1,9 +1,30 @@
 import { Button, Textarea, TextInput } from "flowbite-react";
 import InfoCard from "../../Components/InfoCard/InfoCard";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
+  /**
+   * @param {Event} e
+   */
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        body: formData,
+      });
+
+      toast.success("Message sent successfully 🎉", { duration: 3000 });
+      e.target.reset();
+    } catch (error) {
+      toast.error("Failed to send message. Try again!");
+    }
+  };
   return (
     <>
+      <Toaster position="top-center" />
       <section id="Contact" className="py-[150px]">
         <div className="xl:mx-[159px] grid xl:grid-cols-2">
           <div className="mb-[72px]">
@@ -19,7 +40,7 @@ export default function Contact() {
               </h1>
               <p className="text-[#767682] font-Jost text-[18px] max-w-[400px]">
                 Always available for freelancing if the right project comes
-                along, Feel free to contact me.
+                along
               </p>
             </div>
 
@@ -94,20 +115,22 @@ export default function Contact() {
 
           <div className="form w-full mt-10">
             <h3 className="text-[#767682] font-Jost text-[18px] mb-4">
-              Got a project in mind? Fill in the form or send us.
+              Got a project in mind? Fill in the form or send me.
             </h3>
             <form
               className="flex flex-col gap-5"
               name="hire-me"
               method="POST"
               data-netlify="true"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="hire-me" />
+              <input type="text" name="bot-field" style={{ display: "none" }} />
 
               <div>
                 <TextInput
                   id="name"
-                  name="name" 
+                  name="name"
                   type="text"
                   placeholder="Your Name"
                   required
@@ -118,7 +141,7 @@ export default function Contact() {
               <div>
                 <TextInput
                   id="email"
-                  name="email" 
+                  name="email"
                   type="email"
                   placeholder="Your Email"
                   required
@@ -129,7 +152,7 @@ export default function Contact() {
               <div>
                 <TextInput
                   id="subject"
-                  name="subject" 
+                  name="subject"
                   type="text"
                   placeholder="Subject"
                   required
@@ -140,7 +163,7 @@ export default function Contact() {
               <div>
                 <Textarea
                   id="comment"
-                  name="message" 
+                  name="message"
                   placeholder="Your Message"
                   required
                   rows={6}
