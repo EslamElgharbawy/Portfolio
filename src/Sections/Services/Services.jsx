@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import Card from "../../Components/Card/Card";
 
 export default function Services() {
   return (

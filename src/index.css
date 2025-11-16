@@ -229,3 +229,17 @@ body {
     rgba(24, 20, 95, 0) 100%
   );
 }
+.input > div > input {
+  background-color: #fff;
+  border: 2px solid #ecebf9;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #12103e;
+  padding-left: 16px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.input > div > input:focus {
+  outline: none;
+  border-color: #ff6d5a;
+  box-shadow: 0 0 0 1px #ff6d5a;
+}
