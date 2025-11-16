@@ -125,6 +125,10 @@ export default function Contact() {
               onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="hire-me" />
+              <input type="hidden" name="name" />
+              <input type="hidden" name="email" />
+              <input type="hidden" name="subject" />
+              <input type="hidden" name="message" />
               <input type="text" name="bot-field" style={{ display: "none" }} />
 
               <div>
