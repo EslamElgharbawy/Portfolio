@@ -48,7 +48,7 @@ export default function About() {
                                 View Resume
                               </a>
                               <a
-                                href="/public/EslamElgharbawy.pdf"
+                                href="https://drive.google.com/file/d/1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT/view?usp=drive_link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="absolute inset-0 flex items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"

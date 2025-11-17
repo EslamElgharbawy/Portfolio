@@ -25,7 +25,7 @@ export default function Contact() {
   return (
     <>
       <Toaster position="top-center" />
-      <section id="Contact" className="py-[150px]">
+      <section id="Contact" className="py-[150px] sm:max-xl:px-5">
         <div className="xl:mx-[159px] grid xl:grid-cols-2">
           <div className="mb-[72px]">
             <div className="mb-8">
@@ -33,9 +33,7 @@ export default function Contact() {
                 Let’s Discuss
                 <span className="text-[#ff6d5a]">
                   {" "}
-                  Your
-                  <br />
-                  Project
+                  Your Project
                 </span>
               </h1>
               <p className="text-[#767682] font-Jost text-[18px] max-w-[400px]">
@@ -113,7 +111,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="form w-full mt-10">
+          <div className="form mt-10">
             <h3 className="text-[#767682] font-Jost text-[18px] mb-4">
               Got a project in mind? Fill in the form or send me.
             </h3>
