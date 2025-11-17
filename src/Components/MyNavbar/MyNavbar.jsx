@@ -34,7 +34,7 @@ export function MyNavbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sections]);
   return (
-    <Navbar className="Nav px-0 md:px-4 py-7 bg-transparent absolute top-0 left-0 w-full">
+    <Navbar className="Nav px-0 md:px-4 py-7 bg-transparent fixed top-0 left-0 w-full z-50">
       <NavbarBrand>
         <div className="flex justify-center items-center gap-2">
           <div className="bg-[#ff6d5a] flex items-center justify-center rounded-md px-1 py-1">
@@ -56,7 +56,7 @@ export function MyNavbar() {
         <NavbarToggle />
       </div>
 
-      <NavbarCollapse className="Navlinks font-Jost py-3">
+      <NavbarCollapse className="Navlinks font-Jost py-3 overflow-x-hidden">
         {sections.map((id) => (
           <NavbarLink
             key={id}

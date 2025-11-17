@@ -8,7 +8,7 @@ import Services from "./Sections/Services/Services";
 function App() {
   return (
     <>
-      <header className="fixed z-50 w-full">
+      <header>
         <MyNavbar />
       </header>
       <main>
