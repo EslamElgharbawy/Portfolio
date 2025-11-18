@@ -4,6 +4,7 @@ import Footer from "./Components/Footer/Footer";
 import Hero from "./Sections/Hero/Hero";
 import { MyNavbar } from "./Components/MyNavbar/MyNavbar";
 import Services from "./Sections/Services/Services";
+import Projects from "./Sections/Projects/Projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Hero />
           <About />
           <Services />
+          <Projects/>
           <Contact />
         <Footer />
       </main>

@@ -35,6 +35,11 @@ body {
   background-position: center;
   background-size: 100% 100%;
 }
+#Projects {
+  background-image: url("../src/assets/images/portfolio_bg.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
 @media (max-width: 824px) {
   #Home {
     height: initial;
@@ -244,3 +249,4 @@ body {
   border-color: #ff6d5a;
   box-shadow: 0 0 0 1px #ff6d5a;
 }
+
