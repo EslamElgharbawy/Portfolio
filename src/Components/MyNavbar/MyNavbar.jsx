@@ -10,6 +10,7 @@ import HireButton from "../HireButton/HireButton";
 import { useEffect, useState } from "react";
 export function MyNavbar() {
   const [active, setactive] = useState("Home");
+  const [NavBG, setNavBG] = useState(false);
   const sections = ["Home", "About", "Services", "Projects", "Contact"];
 
   useEffect(() => {
@@ -29,12 +30,25 @@ export function MyNavbar() {
       if (current !== active) {
         setactive(current);
       }
+      if (scrollY > 100) {
+        setNavBG(true);
+      } else {
+        setNavBG(false);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [sections]);
+
   return (
-    <Navbar className="Nav px-0 md:px-4 py-7 bg-transparent fixed top-0 left-0 w-full z-50">
+    <Navbar
+      className={`Nav px-0 md:px-4 py-5 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
+        NavBG ? "bg-black  shadow-lg" : ""
+      }`}
+    >
       <NavbarBrand>
         <div className="flex justify-center items-center gap-2">
           <div className="bg-[#ff6d5a] flex items-center justify-center rounded-md px-1 py-1">
