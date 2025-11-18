@@ -7,10 +7,12 @@ import {
 } from "flowbite-react";
 import LetterE from "../../assets/images/Letter E.png";
 import HireButton from "../HireButton/HireButton";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 export function MyNavbar() {
   const [active, setactive] = useState("Home");
   const [NavBG, setNavBG] = useState(false);
+  const [show, setShow] = useState(true);
+  const lastScrollY = useRef(0);
   const sections = ["Home", "About", "Services", "Projects", "Contact"];
 
   useEffect(() => {
@@ -35,19 +37,23 @@ export function MyNavbar() {
       } else {
         setNavBG(false);
       }
+      if (scrollY > lastScrollY.current) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+
+      lastScrollY.current = scrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [sections]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <Navbar
       className={`Nav px-0 md:px-4 py-5 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
-        NavBG ? "bg-black  shadow-lg" : ""
-      }`}
+        NavBG ? "bg-black  shadow-lg" : "bg-transparent"} ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
       <NavbarBrand>
         <div className="flex justify-center items-center gap-2">
