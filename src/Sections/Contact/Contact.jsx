@@ -26,7 +26,7 @@ export default function Contact() {
     <>
       <Toaster position="top-center" />
       <section id="Contact" className="py-[150px] sm:max-xl:px-5">
-        <div className="xl:mx-[159px] grid xl:grid-cols-2">
+        <div className="xl:mx-[159px] grid sm:grid-cols-1 xl:grid-cols-2">
           <div className="mb-[72px]">
             <div className="mb-8">
               <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e] leading-tight mb-6">

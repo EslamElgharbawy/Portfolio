@@ -21,7 +21,7 @@ export default function Hero() {
               <span className="pl-2">
                 
                 <a
-                  href="#"
+                  href="#Contact"
                   className="relative font-semibold text-[#ff6d5a] before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ff6d5a] before:transition-all before:duration-500 hover:before:w-full"
                 >
                   Let’s Talk

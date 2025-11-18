@@ -7,7 +7,7 @@ export default function About() {
         <div className="xl:mx-[159px]">
           <div className="xl:flex justify-center items-center  lg:max-2xl:mx-10 sm:max-lg:mx-2">
             <div className="xl:w-1/2 px-3">
-              <div className="image_back flex justify-center xl:w-[500px] rounded-tr-3xl rounded-tl-3xl rounded-br-3xl relative">
+              <div className="image_back flex justify-center sm:w-[300px] md:w-[370px] lg:w-[600px] xl:w-[500px] rounded-tr-3xl rounded-tl-3xl rounded-br-3xl relative">
                 <img
                   src={AboutImage}
                   alt="Eslam ElGahrbawy"
