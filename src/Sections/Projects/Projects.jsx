@@ -14,7 +14,7 @@ export default function Projects() {
       <section id="Projects" className="py-[80px] sm:max-xl:px-5 xl:py-[150px]">
         <div className="xl:mx-[159px]">
           <div className="">
-            <div className="mb-[72px]">
+            <div className="mb-[50px] xl:mb-[72px]">
               <div className="flex gap-4 text-[#7771ff]">
                 <p className="font-Jost">Portfolio</p>
                 <span className="icon-animation">
@@ -34,7 +34,7 @@ export default function Projects() {
                   </svg>
                 </span>
               </div>
-              <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend mb-8 xl:mb-10">
+              <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend xl:mb-10">
                 <h1 className="text-[#c3c1e8]">
                   My latest <span className="text-[#ff6d5a]">Projects</span>
                 </h1>

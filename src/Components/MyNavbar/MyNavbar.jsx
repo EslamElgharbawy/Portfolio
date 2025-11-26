@@ -1,10 +1,12 @@
 import {
+  Button,
   Navbar,
   NavbarBrand,
   NavbarCollapse,
   NavbarLink,
   NavbarToggle,
 } from "flowbite-react";
+import { motion } from "framer-motion";
 import LetterE from "../../assets/images/Letter E.png";
 import HireButton from "../HireButton/HireButton";
 import { useEffect, useRef, useState } from "react";
@@ -12,6 +14,7 @@ export function MyNavbar() {
   const [active, setactive] = useState("Home");
   const [NavBG, setNavBG] = useState(false);
   const [show, setShow] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const lastScrollY = useRef(0);
   const sections = ["Home", "About", "Services", "Projects", "Contact"];
 
@@ -53,7 +56,8 @@ export function MyNavbar() {
   return (
     <Navbar
       className={`Nav px-0 md:px-4 py-5 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
-        NavBG ? "bg-black  shadow-lg" : "bg-transparent"} ${show ? "translate-y-0" : "-translate-y-full"}`}
+        NavBG ? "bg-black  shadow-lg" : "bg-transparent"
+      } ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
       <NavbarBrand>
         <div className="flex justify-center items-center gap-2">
@@ -69,28 +73,77 @@ export function MyNavbar() {
           </h1>
         </div>
       </NavbarBrand>
-      <div className="flex md:order-2 items-center gap-3">
+      <div className="right-side flex md:order-2 items-center gap-3">
         <div className="hidden lg:flex font-Lexend">
           <HireButton />
         </div>
-        <NavbarToggle />
-      </div>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="navbar-toggle flex flex-col justify-center items-center lg:hidden gap-[6px] p-2"
+        >
+          <motion.svg
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            className="cursor-pointer"
+          >
+            {/* Line 1 */}
+            <motion.line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"
+              animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
 
-      <NavbarCollapse className="Navlinks font-Jost py-3 overflow-x-hidden">
+            {/* Line 2 */}
+            <motion.line
+              x1="6"
+              y1="12"
+              x2="21"
+              y2="12"
+              animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+              transition={{ duration: 0.2 }}
+            />
+
+            {/* Line 3 */}
+            <motion.line
+              x1="3"
+              y1="18"
+              x2="21"
+              y2="18"
+              animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.svg>
+        </button>
+      </div>
+      <div
+        className={`Navlinks font-Jost py-3 sm:max-xl:w-full xl:flex xl:gap-8 transition-all duration-300 ${
+          isOpen
+            ? "max-h-96 opacity-100 bg-[#181818] mt-3 rounded-t-lg border-t-2 border-[#ff6d5a]"
+            : "sm:max-xl:max-h-0 sm:max-xl:opacity-0 sm:max-xl:hidden sm:max-xl:pointer-events-none"
+        }`}
+      >
         {sections.map((id) => (
-          <NavbarLink
+          <a
             key={id}
             href={`#${id}`}
-            className={`font-normal text-lg transition-all duration-300 ${
+            onClick={() => setIsOpen(false)}
+            className={`sm:max-xl:block sm:max-xl:py-2 sm:max-xl:px-4 font-normal text-lg transition-all duration-300 border-0 hover:bg-transparent ${
               active == id
                 ? "text-[#ff6d5a]"
-                : "text-[#b5b5c0] hover:text-[#ff6d5a]"
+                : "text-white xl:text-[#b5b5c0] hover:text-[#ff6d5a]"
             }`}
           >
             {id}
-          </NavbarLink>
+          </a>
         ))}
-      </NavbarCollapse>
+      </div>
     </Navbar>
   );
 }
