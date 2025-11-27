@@ -30,7 +30,7 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="container font-Jost flex  lg:flex-row justify-between px-2 md:px-3 py-12  lg:absolute lg:z-10 lg:top-[42%] lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
+        <div className="container font-Jost flex lg:flex-row justify-between px-2 md:px-3 py-12  lg:absolute lg:z-10 lg:top-[42%] lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
           <div className="leftSide">
             <div className="flex flex-col justify-center items-start gap-10 ">
               <div className="MyInfo pl-8 lg:pl-0 min-w-[260px]">

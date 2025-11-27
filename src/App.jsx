@@ -1,25 +1,22 @@
-import About from "./Sections/About/About";
-import Contact from "./Sections/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
-import Hero from "./Sections/Hero/Hero";
-import { MyNavbar } from "./Components/MyNavbar/MyNavbar";
-import Services from "./Sections/Services/Services";
-import Projects from "./Sections/Projects/Projects";
+
+import { useEffect, useState } from "react";
+import Loader from "./Components/Loader/Loader";
+import { AnimatePresence } from "framer-motion";
+import MainContent from "./Components/MainContent/MainContent";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const Timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 900);
+    return () => clearTimeout(Timeout);
+  }, []);
   return (
     <>
-      <header>
-        <MyNavbar />
-      </header>
-      <main>
-        <Hero />
-          <About />
-          <Services />
-          <Projects/>
-          <Contact />
-        <Footer />
-      </main>
+      <AnimatePresence>
+        {isLoading ? <Loader key="loader"/> : <MainContent key="main"/>}
+      </AnimatePresence>
     </>
   );
 }

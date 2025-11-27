@@ -1,10 +1,6 @@
 import {
-  Button,
   Navbar,
   NavbarBrand,
-  NavbarCollapse,
-  NavbarLink,
-  NavbarToggle,
 } from "flowbite-react";
 import { motion } from "framer-motion";
 import LetterE from "../../assets/images/Letter E.png";
@@ -137,7 +133,7 @@ export function MyNavbar() {
             className={`sm:max-xl:block sm:max-xl:py-2 sm:max-xl:px-4 font-normal text-lg transition-all duration-300 border-0 hover:bg-transparent ${
               active == id
                 ? "text-[#ff6d5a]"
-                : "text-white xl:text-[#b5b5c0] hover:text-[#ff6d5a]"
+                : "text-white xl:!text-[#b5b5c0] hover:text-[#ff6d5a]"
             }`}
           >
             {id}

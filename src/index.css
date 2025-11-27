@@ -51,6 +51,51 @@ body {
     height: initial;
   }
 }
+.cs_preloader {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    261deg,
+    #fff -5.9%,
+    #fff1ef 23.95%,
+    #e0f0ff 160.95%
+  );
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.cs_preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cs_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs_preloader_in {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border: 3px solid rgba(255, 109, 90, 0.2);
+  border-top-color: #ff6d5a;
+  border-radius: 50%;
+}
+
+.cs_preloader_in::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #342ead;
+}
 
 .image_back {
   background: linear-gradient(
