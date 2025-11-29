@@ -1,6 +1,7 @@
 import { Button, Textarea, TextInput } from "flowbite-react";
 import InfoCard from "../../Components/InfoCard/InfoCard";
 import toast, { Toaster } from "react-hot-toast";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   /**
@@ -30,7 +31,15 @@ export default function Contact() {
           <div className="mb-[72px]">
             <div className="flex gap-4 text-[#342ead]">
               <p className="font-Jost ">Contact Me</p>
-              <span className="icon-animation">
+              <motion.span
+                animate={{ rotateY: 360 }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                className="icon-animation"
+              >
                 <svg
                   width="20"
                   height="18"
@@ -47,7 +56,7 @@ export default function Contact() {
                     d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                   />
                 </svg>
-              </span>
+              </motion.span>
             </div>
             <div className="mb-8">
               <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e] leading-tight mb-6">

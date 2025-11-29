@@ -51,7 +51,7 @@ export function MyNavbar() {
 
   return (
     <Navbar
-      className={`Nav px-0 md:px-4 py-5 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
+      className={`Nav px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
         NavBG ? "bg-black  shadow-lg" : "bg-transparent"
       } ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
@@ -69,8 +69,8 @@ export function MyNavbar() {
           </h1>
         </div>
       </NavbarBrand>
-      <div className="right-side flex md:order-2 items-center gap-3">
-        <div className="hidden lg:flex font-Lexend">
+      <div className="right-side md:order-2 items-center gap-3">
+        <div className="hidden lg:block font-Lexend">
           <HireButton />
         </div>
         <button
@@ -119,10 +119,10 @@ export function MyNavbar() {
         </button>
       </div>
       <div
-        className={`Navlinks font-Jost py-3 sm:max-xl:w-full xl:flex xl:gap-8 transition-all duration-300 ${
+        className={`Navlinks font-Jost py-3 sm:max-xl:w-full xl:flex xl:gap-8 transition-all duration-300 ease-in-out ${
           isOpen
-            ? "max-h-96 opacity-100 bg-[#181818] mt-3 rounded-t-lg border-t-2 border-[#ff6d5a]"
-            : "sm:max-xl:max-h-0 sm:max-xl:opacity-0 sm:max-xl:hidden sm:max-xl:pointer-events-none"
+            ? "sm:max-xl:max-h-96 bg-[#181818] mt-4 rounded-t-lg border-t-2 border-[#ff6d5a]"
+            : "sm:max-xl:max-h-0 sm:max-xl:opacity-0 sm:max-xl:pointer-events-none"
         }`}
       >
         {sections.map((id) => (

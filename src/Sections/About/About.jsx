@@ -1,5 +1,6 @@
 import { Button, Progress, TabItem, Tabs } from "flowbite-react";
 import AboutImage from "../../assets/images/upscalemedia-transformed (2)9.png";
+import { motion } from "framer-motion";
 export default function About() {
   return (
     <>
@@ -19,7 +20,15 @@ export default function About() {
               <div className="xl:ps-14 mt-12 xl:mt-16">
                 <div className="flex gap-4 text-[#342ead]">
                   <p className="font-Jost ">About Me</p>
-                  <span className="icon-animation">
+                  <motion.span
+                    className="icon-animation"
+                    animate={{ rotateY: 360 }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  >
                     <svg
                       width="34"
                       height="18"
@@ -34,7 +43,7 @@ export default function About() {
                         fill="#342EAD"
                       ></path>
                     </svg>
-                  </span>
+                  </motion.span>
                 </div>
                 <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend mb-8 xl:mb-10">
                   <h1 className="text-[#12103e]">
@@ -61,20 +70,28 @@ export default function About() {
                           trends and technological advances.
                         </p>
                         <div className="w-fit mt-8 font-Jost">
-                          <div className="bg-[#ff6d5a] rounded-lg md:order-2 md:flex">
-                            <Button className="text-lg font-semibold px-8 h-12 xl:!px-9 xl:!h-14 relative overflow-hidden group focus:ring-0 focus:outline-none">
-                              <a className="flex justify-center items-center transition-all duration-300 group-hover:-translate-y-10">
+                          <div className="bg-[#ff6d5a] rounded-lg md:order-2 md:flex text-white">
+                            <a
+                              href="https://drive.google.com/file/d/1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT/view"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-lg font-semibold sm:max-xl:px-8 sm:max-xl:h-12 xl:px-9 xl:h-14
+               bg-[#ff6d5a] rounded-lg relative overflow-hidden 
+               group flex justify-center items-center
+               "
+                            >
+                              <span className="block transition-all duration-300 group-hover:-translate-y-10">
                                 View Resume
-                              </a>
-                              <a
-                                href="https://drive.google.com/file/d/1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT/view?usp=drive_link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="absolute inset-0 flex items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                              </span>
+
+                              <span
+                                className="absolute inset-0 flex items-center justify-center
+                     translate-y-full opacity-0 transition-all duration-300 
+                     group-hover:translate-y-0 group-hover:opacity-100"
                               >
                                 View Resume
-                              </a>
-                            </Button>
+                              </span>
+                            </a>
                           </div>
                         </div>
                       </div>

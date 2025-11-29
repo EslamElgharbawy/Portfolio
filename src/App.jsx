@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Loader from "./Components/Loader/Loader";
 import { AnimatePresence } from "framer-motion";

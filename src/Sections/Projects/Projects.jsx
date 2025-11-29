@@ -4,10 +4,11 @@ import project3 from "../../assets/images/imac-screen-mockup.png";
 import project4 from "../../assets/images/Yummy.png";
 import project5 from "../../assets/images/NoteApp.png";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
-import {Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { motion } from "framer-motion";
 export default function Projects() {
   return (
     <>
@@ -17,7 +18,15 @@ export default function Projects() {
             <div className="mb-[50px] xl:mb-[72px]">
               <div className="flex gap-4 text-[#7771ff]">
                 <p className="font-Jost">Portfolio</p>
-                <span className="icon-animation">
+                <motion.span
+                  animate={{ rotateY: 360 }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="icon-animation"
+                >
                   <svg
                     width="20"
                     height="18"
@@ -32,7 +41,7 @@ export default function Projects() {
                       fill="currentColor"
                     ></path>
                   </svg>
-                </span>
+                </motion.span>
               </div>
               <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend xl:mb-10">
                 <h1 className="text-[#c3c1e8]">

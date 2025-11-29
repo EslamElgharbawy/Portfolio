@@ -1,4 +1,5 @@
 import Card from "../../Components/Card/Card";
+import { motion } from "framer-motion";
 
 export default function Services() {
   return (
@@ -7,7 +8,12 @@ export default function Services() {
         <div className="xl:mx-[159px]">
           <div className="flex gap-4 text-[#342ead]">
             <p className="font-Jost ">Services</p>
-            <span className="icon-animation">
+            <motion.span animate={{ rotateY: 360 }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }} className="icon-animation">
               <svg
                 width="20"
                 height="18"
@@ -22,7 +28,7 @@ export default function Services() {
                   fill="#342EAD"
                 ></path>
               </svg>
-            </span>
+            </motion.span>
           </div>
           <div className="mb-[72px]">
             <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e]">
