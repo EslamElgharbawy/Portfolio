@@ -1,4 +1,4 @@
-export default function Card({ icon, projects, title, body }) {
+export default function Card({ icon, title, body }) {
   return (
     <>
       <div className="Card lg:px-5 lg:min-w-[410px] sm:max-xl:mb-20">
@@ -6,9 +6,6 @@ export default function Card({ icon, projects, title, body }) {
           <div className="Card-icon">{icon}</div>
           <div>
             <div className="Card-title mb-4">
-              <p className="text-[15px] text-[#9e9eac] uppercase">
-                {projects} Projects
-              </p>
               <h3 className="font-Lexend text-[28px] font-medium text-[#12103e] ">
                 {title}
               </h3>

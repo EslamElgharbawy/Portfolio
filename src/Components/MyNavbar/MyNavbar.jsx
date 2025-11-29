@@ -1,8 +1,5 @@
-import {
-  Navbar,
-  NavbarBrand,
-} from "flowbite-react";
-import { motion } from "framer-motion";
+import { Navbar, NavbarBrand } from "flowbite-react";
+import { AnimatePresence, motion } from "framer-motion";
 import LetterE from "../../assets/images/Letter E.png";
 import HireButton from "../HireButton/HireButton";
 import { useEffect, useRef, useState } from "react";
@@ -51,7 +48,7 @@ export function MyNavbar() {
 
   return (
     <Navbar
-      className={`Nav px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
+      className={`Nav px-0 md:px-4 py-5 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
         NavBG ? "bg-black  shadow-lg" : "bg-transparent"
       } ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
@@ -119,27 +116,51 @@ export function MyNavbar() {
         </button>
       </div>
       <div
-        className={`Navlinks font-Jost py-3 sm:max-xl:w-full xl:flex xl:gap-8 transition-all duration-300 ease-in-out ${
-          isOpen
-            ? "sm:max-xl:max-h-96 bg-[#181818] mt-4 rounded-t-lg border-t-2 border-[#ff6d5a]"
-            : "sm:max-xl:max-h-0 sm:max-xl:opacity-0 sm:max-xl:pointer-events-none"
-        }`}
+        className={
+          "Navlinks font-Jost py-3 sm:max-xl:w-full sm:max-xl:hidden xl:flex xl:gap-8 transition-all duration-300 ease-in-out"
+        }
       >
         {sections.map((id) => (
           <a
             key={id}
             href={`#${id}`}
-            onClick={() => setIsOpen(false)}
-            className={`sm:max-xl:block sm:max-xl:py-2 sm:max-xl:px-4 font-normal text-lg transition-all duration-300 border-0 hover:bg-transparent ${
+            className={`font-normal text-lg transition-all duration-300  ${
               active == id
                 ? "text-[#ff6d5a]"
-                : "text-white xl:!text-[#b5b5c0] hover:text-[#ff6d5a]"
+                : "text-[#b5b5c0] hover:text-[#ff6d5a]"
             }`}
           >
             {id}
           </a>
         ))}
       </div>
+      
+        <AnimatePresence mode="wait">
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0 }}
+            animate={{ height: "auto" }}
+            exit={{ height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="Navlinks font-Jost py-3 mt-3 sm:max-xl:w-full xl:flex xl:gap-8 bg-[#181818] border-t-2 border-[#ff6d5a] rounded-t-lg overflow-hidden"
+          >
+            {sections.map((id) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                onClick={() => setIsOpen(false)}
+                className={`sm:max-xl:block sm:max-xl:py-2 sm:max-xl:px-4 font-normal text-lg transition-all duration-300 ${
+                  active == id
+                    ? "text-[#ff6d5a]"
+                    : "text-white xl:!text-[#b5b5c0] hover:text-[#ff6d5a]"
+                }`}
+              >
+                {id}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </Navbar>
   );
 }

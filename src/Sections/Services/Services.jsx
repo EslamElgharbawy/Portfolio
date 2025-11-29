@@ -56,7 +56,6 @@ export default function Services() {
                     />
                   </svg>
                 }
-                projects={6}
                 title={"Web Development"}
                 body={
                   "I build responsive, fast, and modern websites using React, Tailwind CSS, and API integrations"
@@ -79,7 +78,6 @@ export default function Services() {
                     />
                   </svg>
                 }
-                projects={5}
                 title={"Responsive Design"}
                 body={
                   "I ensure all websites I build look great on every device from desktops to smartphones"
@@ -103,7 +101,6 @@ export default function Services() {
                     />{" "}
                   </svg>
                 }
-                projects={3}
                 title={"Website Optimization"}
                 body={
                   "Improving website speed, accessibility, and SEO for better performance and user experience."
