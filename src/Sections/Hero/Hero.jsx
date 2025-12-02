@@ -8,7 +8,7 @@ export default function Hero() {
           <img
             src={Eslam}
             alt="Eslam ElGahrbawy"
-            className="h-[500px] object-cover sm:max-md:max-w-[340px] md:max-xl:max-w-[360px]"
+            className="h-[520px] xl:h-[540px] object-cover sm:max-md:max-w-[340px] md:max-xl:max-w-[360px]"
           />
           <motion.div
             initial={{ y: 40, opacity: 0 }}

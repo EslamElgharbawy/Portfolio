@@ -1,7 +1,8 @@
 import { Button, Textarea, TextInput } from "flowbite-react";
 import InfoCard from "../../Components/InfoCard/InfoCard";
 import toast, { Toaster } from "react-hot-toast";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Contact() {
   /**
@@ -23,13 +24,23 @@ export default function Contact() {
       toast.error("Failed to send message. Try again!");
     }
   };
+
+  const ref = useRef(null);
+  const isinView = useInView(ref, { once: true, margin: "-50px" });
+
   return (
     <>
       <Toaster position="top-center" />
       <section id="Contact" className="py-[150px] sm:max-xl:px-5">
         <div className="xl:mx-[159px] grid sm:grid-cols-1 xl:grid-cols-2">
           <div className="mb-[72px]">
-            <div className="flex gap-4 text-[#342ead]">
+            <motion.div
+              ref={ref}
+              className="flex gap-4 text-[#342ead]"
+              initial={{ x: -30, opacity: 0 }}
+              animate={isinView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
               <p className="font-Jost ">Contact Me</p>
               <motion.span
                 animate={{ rotateY: 360 }}
@@ -57,7 +68,7 @@ export default function Contact() {
                   />
                 </svg>
               </motion.span>
-            </div>
+            </motion.div>
             <div className="mb-8">
               <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e] leading-tight mb-6">
                 Let’s Discuss
@@ -200,12 +211,49 @@ export default function Contact() {
                 />
               </div>
 
-              <Button
-                type="submit"
-                className="w-fit mt-2 !bg-[#ff6d5a] font-Lexend focus:outline-none focus:ring-0 text-lg h-auto !py-3 !px-9"
-              >
-                Send Message
-              </Button>
+              <div className="bg-[#ff6d5a] rounded-lg w-fit mt-2 font-Lexend">
+                <motion.button
+                  type="submit"
+                  className="bg-[#ff6d5a] rounded-lg text-lg font-semibold h-auto py-3 px-9 relative overflow-hidden text-white"
+                  initial="rest"
+                  whileHover="hover"
+                  animate="rest"
+                >
+                  {/* النص الأساسي */}
+                  <motion.span
+                    variants={{
+                      rest: { y: 0 },
+                      hover: { y: -40 },
+                    }}
+                    transition={{
+                      duration: 0.55,
+                      ease: "linear",
+                      type: "spring",
+                      stiffness: 120,
+                    }}
+                    className="block"
+                  >
+                    Send Message
+                  </motion.span>
+
+                  {/* النص البديل */}
+                  <motion.span
+                    variants={{
+                      rest: { y: 40 },
+                      hover: { y: 0 },
+                    }}
+                    transition={{
+                      duration: 0.55,
+                      ease: "linear",
+                      type: "spring",
+                      stiffness: 120,
+                    }}
+                    className="absolute inset-0 flex items-center justify-center"
+                  >
+                    Send Message
+                  </motion.span>
+                </motion.button>
+              </div>
             </form>
           </div>
         </div>

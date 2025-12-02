@@ -48,7 +48,7 @@ export function MyNavbar() {
 
   return (
     <Navbar
-      className={`Nav px-0 md:px-4 py-5 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
+      className={`Nav px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
         NavBG ? "bg-black  shadow-lg" : "bg-transparent"
       } ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
@@ -117,7 +117,7 @@ export function MyNavbar() {
       </div>
       <div
         className={
-          "Navlinks font-Jost py-3 sm:max-xl:w-full sm:max-xl:hidden xl:flex xl:gap-8 transition-all duration-300 ease-in-out"
+          "Navlinks font-Jost mr-5 py-3 sm:max-xl:w-full sm:max-xl:hidden xl:flex xl:gap-8 transition-all duration-300 ease-in-out"
         }
       >
         {sections.map((id) => (
@@ -140,7 +140,6 @@ export function MyNavbar() {
           <motion.div
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
-            exit={{ height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="Navlinks font-Jost py-3 mt-3 sm:max-xl:w-full xl:flex xl:gap-8 bg-[#181818] border-t-2 border-[#ff6d5a] rounded-t-lg overflow-hidden"
           >

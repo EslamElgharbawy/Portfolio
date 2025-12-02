@@ -8,15 +8,26 @@ import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 export default function Projects() {
+  const ref = useRef(null);
+  const isinView = useInView(ref, { once: true ,margin:"-50px"});
   return (
     <>
       <section id="Projects" className="py-[80px] sm:max-xl:px-5 xl:py-[150px]">
         <div className="xl:mx-[159px]">
-          <div className="">
+          <div>
             <div className="mb-[50px] xl:mb-[72px]">
-              <div className="flex gap-4 text-[#7771ff]">
+              <motion.div
+                ref={ref}
+                className="flex gap-4 text-[#7771ff]"
+                initial={{ x: 30, opacity: 0 }}
+                animate={
+                  isinView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
+                }
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              >
                 <p className="font-Jost">Portfolio</p>
                 <motion.span
                   animate={{ rotateY: 360 }}
@@ -42,7 +53,7 @@ export default function Projects() {
                     ></path>
                   </svg>
                 </motion.span>
-              </div>
+              </motion.div>
               <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend xl:mb-10">
                 <h1 className="text-[#c3c1e8]">
                   My latest <span className="text-[#ff6d5a]">Projects</span>

@@ -1,19 +1,31 @@
+import { useRef } from "react";
 import Card from "../../Components/Card/Card";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 export default function Services() {
+  const ref = useRef(null);
+  const isinView = useInView(ref, { once: true, margin: "-50px" });
   return (
     <>
       <section id="Services" className="py-[80px] xl:py-[150px] sm:max-xl:px-5">
         <div className="xl:mx-[159px]">
-          <div className="flex gap-4 text-[#342ead]">
+          <motion.div
+            ref={ref}
+            className="flex gap-4 text-[#342ead]"
+            initial={{ x: -30, opacity: 0 }}
+            animate={isinView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             <p className="font-Jost ">Services</p>
-            <motion.span animate={{ rotateY: 360 }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }} className="icon-animation">
+            <motion.span
+              animate={{ rotateY: 360 }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+              className="icon-animation"
+            >
               <svg
                 width="20"
                 height="18"
@@ -29,9 +41,9 @@ export default function Services() {
                 ></path>
               </svg>
             </motion.span>
-          </div>
-          <div className="mb-[72px]">
-            <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e]">
+          </motion.div>
+          <div className="mb-[72px] leading-normal sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend">
+            <h1 className="text-[#12103e]">
               How Can
               <span className="text-[#ff6d5a]"> I help you</span>
             </h1>
