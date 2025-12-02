@@ -36,7 +36,7 @@ export default function Contact() {
           <div className="mb-[72px]">
             <motion.div
               ref={ref}
-              className="flex gap-4 text-[#342ead]"
+              className="flex gap-4 text-[#342ead] w-fit"
               initial={{ x: -30, opacity: 0 }}
               animate={isinView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}

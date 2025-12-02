@@ -21,7 +21,7 @@ export default function Projects() {
             <div className="mb-[50px] xl:mb-[72px]">
               <motion.div
                 ref={ref}
-                className="flex gap-4 text-[#7771ff]"
+                className="flex gap-4 text-[#7771ff] w-fit"
                 initial={{ x: 30, opacity: 0 }}
                 animate={
                   isinView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }

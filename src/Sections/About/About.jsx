@@ -23,7 +23,7 @@ export default function About() {
               <div className="xl:ps-14 mt-12 xl:mt-16">
                 <motion.div
                   ref={ref}
-                  className="flex gap-4 text-[#342ead]"
+                  className="flex gap-4 text-[#342ead] w-fit"
                   initial={{ x: 30, opacity: 0 }}
                   animate={
                     isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
