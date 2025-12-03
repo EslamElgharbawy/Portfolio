@@ -66,7 +66,7 @@ export default function About() {
                   </h1>
                 </div>
 
-                <div className="info min-h-[350px] ">
+                <div className="info min-h-[380px] ">
                   <Tabs
                     aria-label="Pills"
                     variant="pills"
@@ -75,13 +75,16 @@ export default function About() {
                     <TabItem active title="MYSELF">
                       <div className="w-fit">
                         <p className="text-lg text-[#767682]">
-                          I am a Computer Science student and Frontend Engineer
-                          skilled at HTML, CSS, Javascript and React js also has
-                          good experience in Ui frameworks as (Bootstrap,
-                          Tailwind CSS , Material Ui) to create a unique
-                          customer experience that highlights brand messaging
-                          also Maintains up to date awareness of technological
-                          trends and technological advances.
+                          I am a Computer Science student and a Frontend
+                          Engineer with strong experience in HTML, CSS,
+                          JavaScript, TypeScript, React.js, and Next.js. I work
+                          on building simple, fast, and responsive user
+                          interfaces. I also have experience with Bootstrap,
+                          Tailwind CSS, and Material UI, which helps me create
+                          clean, attractive designs that reflect brand identity.
+                          I always keep up with the latest trends and
+                          technologies in frontend development to deliver modern
+                          and up-to-date work.
                         </p>
                         <div className="bg-[#ff6d5a] rounded-lg md:flex text-white w-fit mt-8 font-Jost">
                           <motion.a

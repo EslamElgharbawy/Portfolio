@@ -8,7 +8,7 @@ export default function Hero() {
           <img
             src={Eslam}
             alt="Eslam ElGahrbawy"
-            className="h-[500px] xl:h-[540px] object-cover sm:max-md:max-w-[340px] md:max-xl:max-w-[360px]"
+            className="h-[500px] md:h-[540px] object-cover sm:max-md:max-w-[340px] md:max-xl:max-w-[360px]"
           />
           <motion.div
             initial={{ y: 40, opacity: 0 }}
@@ -39,7 +39,7 @@ export default function Hero() {
             </p>
           </motion.div>
         </div>
-        <div className="container font-Jost flex lg:flex-row justify-between px-2 md:px-3 py-12  lg:absolute lg:z-10 lg:top-[42%] lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
+        <div className="container font-Jost flex xl:flex-row justify-between px-2 md:px-3 py-12  xl:absolute xl:z-10 xl:top-[42%] xl:left-1/2 xl:-translate-x-1/2 xl:-translate-y-1/2">
           <div className="leftSide">
             <div className="flex flex-col justify-center items-start gap-10 ">
               <div className="MyInfo pl-8 lg:pl-0 min-w-[260px]">

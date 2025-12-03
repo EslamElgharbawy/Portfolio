@@ -7,7 +7,7 @@ export default function ProjectCard({
 }) {
   return (
     <>
-      <div className="min-h-[400px]">
+      <div className="sm:max-md:min-h-[365px] md:max-lg:min-h-[395px] lg:min-h-[400px] xl:min-h-[400px] md:max-xl:scale-95">
         <div className="Card_hover p-4 bg-white rounded-lg relative">
           <a href={Link} target="_blank" rel="noopener noreferrer">
             <div className="relative overflow-hidden rounded-lg  group">

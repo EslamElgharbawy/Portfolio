@@ -66,7 +66,7 @@ export function MyNavbar() {
           </h1>
         </div>
       </NavbarBrand>
-      <div className="right-side md:order-2 items-center gap-3">
+      <div className="right-side xl:order-2 items-center gap-3">
         <div className="hidden lg:block font-Lexend">
           <HireButton />
         </div>
