@@ -1,10 +1,10 @@
-# 🚀 Eslam ElGharbawy – Personal Portfolio
+# 🚀 Eslam ElGharbawy (Personal Portfolio)
 
 Welcome to my personal portfolio website! This project showcases my work, skills, services, and experience as a Frontend Developer.
 
 Live Demo: [**https://visionary-meerkat-d942c5.netlify.app/**](https://visionary-meerkat-d942c5.netlify.app/)
 
----
+<br/>
 
 ## 📌 About the Project
 
@@ -17,7 +17,7 @@ This is a fully responsive portfolio built using modern frontend tools. It inclu
 * Contact section with social icons and motion animations.
 * Smooth scroll and interactive UI using Framer Motion.
 
----
+<br/>
 
 ## 🛠️ Technologies Used
 
@@ -27,7 +27,7 @@ This is a fully responsive portfolio built using modern frontend tools. It inclu
 * **Framer Motion** – Animations & transitions
 * **Netlify** – Deployment
 
----
+<br/>
 
 ## 🎨 Features
 
@@ -39,7 +39,7 @@ This is a fully responsive portfolio built using modern frontend tools. It inclu
 * Grid layout for services and projects
 * Clean and modern UI
 
----
+<br/>
 
 ## 📬 Contact
 
