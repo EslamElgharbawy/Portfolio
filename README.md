@@ -1,16 +1,50 @@
-# React + Vite
+# 🚀 Eslam ElGharbawy (Personal Portfolio)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project showcases my work, skills, services, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+Live Demo: [**https://visionary-meerkat-d942c5.netlify.app/**](https://visionary-meerkat-d942c5.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br/>
 
-## React Compiler
+## 📌 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is a fully responsive portfolio built using modern frontend tools. It includes:
 
-## Expanding the ESLint configuration
+* Hero section with animated elements.
+* About section with tabs for (Myself – Education – Skills).
+* Services section showcasing what I offer.
+* Projects section with live links and hover effects.
+* Contact section with social icons and motion animations.
+* Smooth scroll and interactive UI using Framer Motion.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<br/>
+
+## 🛠️ Technologies Used
+
+* **React.js** – Component-based UI
+* **Tailwind CSS** – Styling & responsiveness
+* **Flowbite React** – Pre-built interactive components
+* **Framer Motion** – Animations & transitions
+* **Netlify** – Deployment
+
+<br/>
+
+## 🎨 Features
+
+* Smooth hover animations
+* Animated icons
+* Responsive layout for all devices
+* Custom Framer Motion transitions
+* Dynamic progress bars
+* Grid layout for services and projects
+* Clean and modern UI
+
+<br/>
+
+## 📬 Contact
+
+If you’d like to reach out, feel free to connect with me:
+
+* **Email:** [eslamelgharbawy334@gmail.com](mailto:eslamelgharbawy334@gmail.com)
+* **LinkedIn:** [https://www.linkedin.com/in/eslam-elgharbawy](https://www.linkedin.com/in/eslam-elgharbawy)
+* **GitHub:** [https://github.com/Eslam-ElGahrbawy](https://github.com/EslamElgharbawy)
