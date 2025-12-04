@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This project showcases my work, skills, services, and experience as a Frontend Developer.
 
-Live Demo: [**https://visionary-meerkat-d942c5.netlify.app/**](https://visionary-meerkat-d942c5.netlify.app/)
+Live Demo: [**https://eslamelgharbawy.netlify.app/**](https://eslamelgharbawy.netlify.app/)
 
 <br/>
 
@@ -21,11 +21,11 @@ This is a fully responsive portfolio built using modern frontend tools. It inclu
 
 ## 🛠️ Technologies Used
 
-* **React.js** – Component-based UI
-* **Tailwind CSS** – Styling & responsiveness
-* **Flowbite React** – Pre-built interactive components
-* **Framer Motion** – Animations & transitions
-* **Netlify** – Deployment
+* **React.js** : Component-based UI
+* **Tailwind CSS** : Styling & responsiveness
+* **Flowbite React** : Pre-built interactive components
+* **Framer Motion** : Animations & transitions
+* **Netlify** : Deployment
 
 <br/>
 
