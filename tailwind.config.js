@@ -24,6 +24,12 @@ export default {
         Lexend: ['"Lexend Deca", sans-serif'],
         Inter: ['"Inter", sans-serif'],
       },
+      colors: {
+        primary: "#12103e",
+        second: "#ff6d5a",
+        third: "#342ead",
+        fourth: "#767682",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

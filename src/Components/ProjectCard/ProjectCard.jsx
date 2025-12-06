@@ -22,10 +22,10 @@ export default function ProjectCard({
           </a>
           <div className="flex justify-between items-center mt-5">
             <div>
-              <h1 className="font-Lexend text-[25px] font-medium   text-[#12103e]">
+              <h1 className="font-Lexend text-[25px] font-medium text-primary">
                 {project_name}
               </h1>
-              <p className="relative font-Jost w-fit text-[#767682] font-medium">
+              <p className="relative font-Jost w-fit text-fourth font-medium">
                 {description}
               </p>
             </div>
@@ -33,7 +33,7 @@ export default function ProjectCard({
               href={Link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-[#ff6d5a1a] overflow-hidden transition-all duration-300 ease-in-out text-[#ff6d5a] flex justify-center items-center rounded-full relative"
+              className="w-10 h-10 bg-[#ff6d5a1a] overflow-hidden transition-all duration-300 ease-in-out text-second flex justify-center items-center rounded-full relative"
               initial="rest"
               whileHover="hover"
               animate="rest"

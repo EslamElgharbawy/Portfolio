@@ -11,7 +11,7 @@ export default function Services() {
         <div className="xl:mx-[159px]">
           <motion.div
             ref={ref}
-            className="flex gap-4 text-[#342ead] w-fit"
+            className="flex gap-4 text-third w-fit"
             initial={{ x: -30, opacity: 0 }}
             animate={isinView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -43,9 +43,9 @@ export default function Services() {
             </motion.span>
           </motion.div>
           <div className="mb-[72px] leading-normal sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend">
-            <h1 className="text-[#12103e]">
+            <h1 className="text-primary">
               How Can
-              <span className="text-[#ff6d5a]"> I help you</span>
+              <span className="text-second"> I help you</span>
             </h1>
           </div>
 
@@ -59,7 +59,7 @@ export default function Services() {
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className="size-8 text-[#342ead]"
+                    className="size-8 text-third"
                   >
                     <path
                       strokeLinecap="round"
@@ -81,7 +81,7 @@ export default function Services() {
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className="size-8 text-[#342ead]"
+                    className="size-8 text-third"
                   >
                     <path
                       strokeLinecap="round"
@@ -103,7 +103,7 @@ export default function Services() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-8 text-[#342ead]"
+                    className="size-8 text-third"
                   >
                     {" "}
                     <path

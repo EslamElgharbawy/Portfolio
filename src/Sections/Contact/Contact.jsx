@@ -36,7 +36,7 @@ export default function Contact() {
           <div className="mb-[72px]">
             <motion.div
               ref={ref}
-              className="flex gap-4 text-[#342ead] w-fit"
+              className="flex gap-4 text-third w-fit"
               initial={{ x: -30, opacity: 0 }}
               animate={isinView ? { x: 0, opacity: 1 } : { x: -30, opacity: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
@@ -70,11 +70,11 @@ export default function Contact() {
               </motion.span>
             </motion.div>
             <div className="mb-8">
-              <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-[#12103e] leading-tight mb-6">
+              <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-primary leading-tight mb-6">
                 Let’s Discuss
-                <span className="text-[#ff6d5a]"> Your Project</span>
+                <span className="text-second"> Your Project</span>
               </h1>
-              <p className="text-[#767682] font-Jost text-[18px] max-w-[400px]">
+              <p className="text-fourth font-Jost text-[18px] max-w-[400px]">
                 Always available for freelancing if the right project comes
                 along
               </p>
@@ -91,7 +91,7 @@ export default function Contact() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-6 text-[#ff6d5a] group-hover:text-white group-hover:duration-300"
+                    className="size-6 text-second group-hover:text-white group-hover:duration-300"
                   >
                     <path
                       strokeLinecap="round"
@@ -116,7 +116,7 @@ export default function Contact() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-6 text-[#ff6d5a] group-hover:text-white group-hover:duration-300"
+                    className="size-6 text-second group-hover:text-white group-hover:duration-300"
                   >
                     <path
                       strokeLinecap="round"
@@ -136,7 +136,7 @@ export default function Contact() {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-6 text-[#ff6d5a] group-hover:text-white transition-all duration-300"
+                    className="size-6 text-second group-hover:text-white transition-all duration-300"
                   >
                     <path
                       strokeLinecap="round"
@@ -150,7 +150,7 @@ export default function Contact() {
           </div>
 
           <div className="form mt-10">
-            <h3 className="text-[#767682] font-Jost text-[18px] mb-4">
+            <h3 className="text-fourth font-Jost text-[18px] mb-4">
               Got a project in mind? Fill in the form or send me.
             </h3>
             <form
@@ -207,14 +207,14 @@ export default function Contact() {
                   placeholder="Your Message"
                   required
                   rows={6}
-                  className="bg-white font-Jost !pl-4 text-base border-2 border-[#ecebf9] transition-all duration-150 ease-in-out focus:border-[#ff6d5a] focus:outline-none focus:ring-0 focus:shadow-[0_0_0_1px_#ff6d5a]"
+                  className="bg-white font-Jost !pl-4 text-base border-2 border-[#ecebf9] transition-all duration-150 ease-in-out focus:border-second focus:ring-0 focus:outline-none focus:shadow-[0_0_0_1px_#ff6d5a]"
                 />
               </div>
 
-              <div className="bg-[#ff6d5a] rounded-lg w-fit mt-2 font-Lexend">
+              <div className="bg-second rounded-lg w-fit mt-2 font-Lexend">
                 <motion.button
                   type="submit"
-                  className="bg-[#ff6d5a] rounded-lg text-lg font-semibold h-auto py-3 px-9 relative overflow-hidden text-white"
+                  className="bg-second rounded-lg text-lg font-semibold h-auto py-3 px-9 relative overflow-hidden text-white"
                   initial="rest"
                   whileHover="hover"
                   animate="rest"

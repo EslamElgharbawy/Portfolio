@@ -31,7 +31,7 @@ export default function Hero() {
               <span className="pl-2">
                 <a
                   href="#Contact"
-                  className="relative font-semibold text-[#ff6d5a] before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-[#ff6d5a] before:transition-all before:duration-500 hover:before:w-full"
+                  className="relative font-semibold text-second before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-second before:transition-all before:duration-500 hover:before:w-full"
                 >
                   Let’s Talk
                 </a>
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="leftSide">
             <div className="flex flex-col justify-center items-start gap-10 ">
               <div className="MyInfo pl-8 lg:pl-0 min-w-[260px]">
-                <h2 className="text-[#ff6d5a] text-xl font-semibold">
+                <h2 className="text-second text-xl font-semibold">
                   Frontend Developer
                 </h2>
                 <h3 className="text-white opacity-60 text-lg">Based in EGY</h3>
@@ -57,22 +57,22 @@ export default function Hero() {
                   href="https://www.facebook.com/share/1AVxLbQ5JM/"
                   className="p-3"
                 >
-                  <i class="fa-brands fa-facebook-f text-2xl text-[#352eac] hover:text-[#ff6d5a] duration-300"></i>
+                  <i class="fa-brands fa-facebook-f text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/eslam_elgharbawy0?igsh=MjduanhlN200amln"
                   className="p-3"
                 >
-                  <i class="fa-brands fa-instagram text-2xl text-[#352eac] hover:text-[#ff6d5a] duration-300"></i>
+                  <i class="fa-brands fa-instagram text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BOzl7lXCPRha7ee9yJNO6uA%3D%3D"
                   className="p-3"
                 >
-                  <i class="fa-brands fa-linkedin-in text-2xl text-[#352eac] hover:text-[#ff6d5a] duration-300"></i>
+                  <i class="fa-brands fa-linkedin-in text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
                 <a href="https://github.com/EslamElgharbawy" className="p-3">
-                  <i class="fa-brands fa-github text-2xl text-[#352eac] hover:text-[#ff6d5a] duration-300"></i>
+                  <i class="fa-brands fa-github text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
               </div>
             </div>

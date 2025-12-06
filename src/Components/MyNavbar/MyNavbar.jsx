@@ -54,7 +54,7 @@ export function MyNavbar() {
     >
       <NavbarBrand>
         <div className="flex justify-center items-center gap-2">
-          <div className="bg-[#ff6d5a] flex items-center justify-center rounded-md px-1 py-1">
+          <div className="bg-second flex items-center justify-center rounded-md px-1 py-1">
             <img
               src={LetterE}
               alt="Eslam logo"
@@ -62,7 +62,7 @@ export function MyNavbar() {
             />
           </div>
           <h1 className="text-white font-Jost text-4xl font-semibold">
-            Esla<span className="text-[#ff6d5a]">m</span>
+            Esla<span className="text-second">m</span>
           </h1>
         </div>
       </NavbarBrand>
@@ -126,8 +126,8 @@ export function MyNavbar() {
             href={`#${id}`}
             className={`font-normal text-lg transition-all duration-300  ${
               active == id
-                ? "text-[#ff6d5a]"
-                : "text-[#b5b5c0] hover:text-[#ff6d5a]"
+                ? "text-second"
+                : "text-[#b5b5c0] hover:text-second"
             }`}
           >
             {id}
@@ -141,7 +141,7 @@ export function MyNavbar() {
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="Navlinks font-Jost py-3 mt-3 sm:max-xl:w-full xl:flex xl:gap-8 bg-[#181818] border-t-2 border-[#ff6d5a] rounded-t-lg overflow-hidden"
+            className="Navlinks font-Jost py-3 mt-3 sm:max-xl:w-full xl:flex xl:gap-8 bg-[#181818] border-t-2 border-second rounded-t-lg overflow-hidden"
           >
             {sections.map((id) => (
               <a
@@ -150,8 +150,8 @@ export function MyNavbar() {
                 onClick={() => setIsOpen(false)}
                 className={`sm:max-xl:block sm:max-xl:py-2 sm:max-xl:px-4 font-normal text-lg transition-all duration-300 ${
                   active == id
-                    ? "text-[#ff6d5a]"
-                    : "text-white xl:!text-[#b5b5c0] hover:text-[#ff6d5a]"
+                    ? "text-seborder-second"
+                    : "text-white xl:!text-[#b5b5c0] hover:text-seborder-second"
                 }`}
               >
                 {id}

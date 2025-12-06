@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function HireButton() {
   return (
     <>
-      <div className="bg-[#ff6d5a] rounded-lg md:order-2 md:flex">
+      <div className="bg-second rounded-lg md:order-2 md:flex">
         <motion.a
           href="#Contact"
           className="text-white text-lg font-semibold px-7 py-3  relative overflow-hidden focus:ring-0 focus:outline-none"

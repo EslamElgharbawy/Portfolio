@@ -6,11 +6,11 @@ export default function Card({ icon, title, body }) {
           <div className="Card-icon">{icon}</div>
           <div>
             <div className="Card-title mb-4">
-              <h3 className="font-Lexend text-[28px] font-medium text-[#12103e] ">
+              <h3 className="font-Lexend text-[28px] font-medium text-primary ">
                 {title}
               </h3>
             </div>
-            <div className="Card-body mb-4 text-lg text-[#767682]">
+            <div className="Card-body mb-4 text-lg text-fourth">
               <p>{body}</p>
             </div>
           

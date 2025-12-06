@@ -23,7 +23,7 @@ export default function About() {
               <div className="xl:ps-14 mt-12 xl:mt-16">
                 <motion.div
                   ref={ref}
-                  className="flex gap-4 text-[#342ead] w-fit"
+                  className="flex gap-4 text-third w-fit"
                   initial={{ x: 30, opacity: 0 }}
                   animate={
                     isInView ? { x: 0, opacity: 1 } : { x: 30, opacity: 0 }
@@ -60,9 +60,9 @@ export default function About() {
                   </motion.span>
                 </motion.div>
                 <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend mb-8 xl:mb-10">
-                  <h1 className="text-[#12103e]">
-                    Why you <span className="text-[#ff6d5a]">hire me </span> for
-                    your <span className="text-[#342ead]">next project?</span>
+                  <h1 className="text-primary">
+                    Why you <span className="text-second">hire me </span> for
+                    your <span className="text-third">next project?</span>
                   </h1>
                 </div>
 
@@ -74,7 +74,7 @@ export default function About() {
                   >
                     <TabItem active title="MYSELF">
                       <div className="w-fit">
-                        <p className="text-lg text-[#767682]">
+                        <p className="text-lg text-fourth">
                           I am a Computer Science student and a Frontend
                           Engineer with strong experience in HTML, CSS,
                           JavaScript, TypeScript, React.js, and Next.js. I work
@@ -86,7 +86,7 @@ export default function About() {
                           technologies in frontend development to deliver modern
                           and up-to-date work.
                         </p>
-                        <div className="bg-[#ff6d5a] rounded-lg md:flex text-white w-fit mt-8 font-Jost">
+                        <div className="bg-second rounded-lg md:flex text-white w-fit mt-8 font-Jost">
                           <motion.a
                             href="https://drive.google.com/file/d/1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT/view"
                             target="_blank"
@@ -131,10 +131,10 @@ export default function About() {
                       </div>
                     </TabItem>
                     <TabItem title="EDUCATION">
-                      <p className="text-lg text-[#767682]">
+                      <p className="text-lg text-fourth">
                         <ul className="space-y-4">
                           <li className="flex items-center gap-3">
-                            <span className="text-[#ff6d5a]">
+                            <span className="text-second">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-6 h-6"
@@ -154,7 +154,7 @@ export default function About() {
                           </li>
 
                           <li className="flex items-center gap-3">
-                            <span className="text-[#ff6d5a]">
+                            <span className="text-second">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-6 h-6"
@@ -174,7 +174,7 @@ export default function About() {
                           </li>
 
                           <li className="flex items-center gap-3">
-                            <span className="text-[#ff6d5a]">
+                            <span className="text-second">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="w-6 h-6"
@@ -198,7 +198,7 @@ export default function About() {
                     </TabItem>
                     <TabItem title="MYTOOLS">
                       <div className="mb-5">
-                        <h2 className="text-xl font-semibold text-[#ff6d5a] font-Lexend">
+                        <h2 className="text-xl font-semibold text-second font-Lexend">
                           Skills
                         </h2>
                       </div>

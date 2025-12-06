@@ -8,7 +8,7 @@ export default function InfoCard({ Title, Content, svg }) {
           {svg}
         </span>
         <div className="">
-          <p className="font-Jost text-[#767682] text-sm">{Title}</p>
+          <p className="font-Jost text-fourth text-sm">{Title}</p>
           <p className="font-Lexend text-lg">{Content}</p>
         </div>
       </div>
