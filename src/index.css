@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.section_Header{
+  @apply text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend
+}
+
 * {
   margin: 0;
   padding: 0;

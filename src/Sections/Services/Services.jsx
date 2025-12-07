@@ -42,7 +42,7 @@ export default function Services() {
               </svg>
             </motion.span>
           </motion.div>
-          <div className="mb-[72px] leading-normal sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend">
+          <div className="section_Header mb-[72px]">
             <h1 className="text-primary">
               How Can
               <span className="text-second"> I help you</span>

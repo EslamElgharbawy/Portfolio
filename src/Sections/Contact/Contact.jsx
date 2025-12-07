@@ -70,7 +70,7 @@ export default function Contact() {
               </motion.span>
             </motion.div>
             <div className="mb-8">
-              <h1 className="sm:max-lg:text-[42px] lg:text-5xl font-semibold font-Lexend text-primary leading-tight mb-6">
+              <h1 className="section_Header text-primary mb-5">
                 Let’s Discuss
                 <span className="text-second"> Your Project</span>
               </h1>

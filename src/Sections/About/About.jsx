@@ -59,7 +59,7 @@ export default function About() {
                     </svg>{" "}
                   </motion.span>
                 </motion.div>
-                <div className="text-[42px] leading-tight xl:leading-normal xl:text-5xl font-semibold font-Lexend mb-8 xl:mb-10">
+                <div className="section_Header mb-8 xl:mb-10">
                   <h1 className="text-primary">
                     Why you <span className="text-second">hire me </span> for
                     your <span className="text-third">next project?</span>
