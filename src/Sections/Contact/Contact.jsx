@@ -7,23 +7,23 @@ import { useRef } from "react";
 
 export default function Contact() {
   const handleSubmit = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  emailjs
-    .sendForm(
-      "SERVICE_ID_HERE",
-      "TEMPLATE_ID_HERE",
-      e.target,
-      "PUBLIC_KEY_HERE"
-    )
-    .then(() => {
-      toast.success("Message sent successfully 🎉");
-      e.target.reset();
-    })
-    .catch(() => {
-      toast.error("Failed to send message ❌");
-    });
-};
+    emailjs
+      .sendForm(
+        "service_uflchlp",
+        "template_d8unm4d",
+        e.target,
+        "qYYp4pt0Fd_Uaqa4o"
+      )
+      .then(() => {
+        toast.success("Message sent successfully 🎉");
+        e.target.reset();
+      })
+      .catch(() => {
+        toast.error("Failed to send message ❌");
+      });
+  };
 
   const ref = useRef(null);
   const isinView = useInView(ref, { once: true, margin: "-50px" });
@@ -153,10 +153,7 @@ export default function Contact() {
             <h3 className="text-fourth font-Jost text-[18px] mb-4">
               Got a project in mind? Fill in the form or send me.
             </h3>
-            <form
-              className="flex flex-col gap-5"
-              onSubmit={handleSubmit}
-            >
+            <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
               <div>
                 <TextInput
                   id="name"
