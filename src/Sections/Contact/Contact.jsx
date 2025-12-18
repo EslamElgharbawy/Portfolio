@@ -2,28 +2,28 @@ import { Button, Textarea, TextInput } from "flowbite-react";
 import InfoCard from "../../Components/InfoCard/InfoCard";
 import toast, { Toaster } from "react-hot-toast";
 import { motion, useInView } from "framer-motion";
+import emailjs from "emailjs-com";
 import { useRef } from "react";
 
 export default function Contact() {
-  /**
-   * @param {Event} e
-   */
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+  const handleSubmit = (e) => {
+  e.preventDefault();
 
-    try {
-      await fetch("/", {
-        method: "POST",
-        body: formData,
-      });
-
-      toast.success("Message sent successfully 🎉", { duration: 3000 });
+  emailjs
+    .sendForm(
+      "SERVICE_ID_HERE",
+      "TEMPLATE_ID_HERE",
+      e.target,
+      "PUBLIC_KEY_HERE"
+    )
+    .then(() => {
+      toast.success("Message sent successfully 🎉");
       e.target.reset();
-    } catch (error) {
-      toast.error("Failed to send message. Try again!");
-    }
-  };
+    })
+    .catch(() => {
+      toast.error("Failed to send message ❌");
+    });
+};
 
   const ref = useRef(null);
   const isinView = useInView(ref, { once: true, margin: "-50px" });
@@ -155,18 +155,8 @@ export default function Contact() {
             </h3>
             <form
               className="flex flex-col gap-5"
-              name="hire-me"
-              method="POST"
-              data-netlify="true"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="form-name" value="hire-me" />
-              <input type="hidden" name="name" />
-              <input type="hidden" name="email" />
-              <input type="hidden" name="subject" />
-              <input type="hidden" name="message" />
-              <input type="text" name="bot-field" style={{ display: "none" }} />
-
               <div>
                 <TextInput
                   id="name"
