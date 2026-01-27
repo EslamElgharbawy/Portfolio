@@ -150,8 +150,8 @@ export function MyNavbar() {
                 onClick={() => setIsOpen(false)}
                 className={`sm:max-xl:block sm:max-xl:py-2 sm:max-xl:px-4 font-normal text-lg transition-all duration-300 ${
                   active == id
-                    ? "text-seborder-second"
-                    : "text-white xl:!text-[#b5b5c0] hover:text-seborder-second"
+                    ? "text-second"
+                    : "text-white xl:!text-[#b5b5c0] hover:text-second"
                 }`}
               >
                 {id}
