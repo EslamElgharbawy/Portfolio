@@ -88,7 +88,7 @@ export default function About() {
                         </p>
                         <div className="bg-second rounded-lg md:flex text-white w-fit mt-8 font-Jost">
                           <motion.a
-                            href="https://drive.google.com/file/d/1R6op2_UhdGhUM5dlcXB7l6gAFxqDxmbT/view"
+                            href="https://drive.google.com/file/d/1eN0gEt8M1GdNdMFKEhxy7HNjq3cqCwVf/view"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white text-lg font-semibold sm:max-xl:px-8 xl:px-9 py-3 relative overflow-hidden focus:ring-0 focus:outline-none flex justify-center items-center"
