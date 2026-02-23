@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <AnimatePresence>
-        {isLoading ? <Loader key="loader"/> : <MainContent key="main"/>}
+        {isLoading ? <Loader key={"loader"}/> : <MainContent key={"main"}/>}
       </AnimatePresence>
     </>
   );

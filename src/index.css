@@ -13,7 +13,7 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 body {
   background-color: #f9fbff;

@@ -48,9 +48,8 @@ export function MyNavbar() {
 
   return (
     <Navbar
-      className={`Nav px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear ${
-        NavBG ? "bg-black  shadow-lg" : "bg-transparent"
-      } ${show ? "translate-y-0" : "-translate-y-full"}`}
+      className={`Nav px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear 
+        ${NavBG ? "bg-black  shadow-lg" : "bg-transparent"} ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
       <NavbarBrand>
         <div className="flex justify-center items-center gap-2">
