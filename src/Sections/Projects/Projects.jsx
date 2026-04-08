@@ -3,6 +3,9 @@ import project2 from "../../assets/images/google-pixelbook-mockup (3).png";
 import project3 from "../../assets/images/imac-screen-mockup.png";
 import project4 from "../../assets/images/Yummy.png";
 import project5 from "../../assets/images/NoteApp.png";
+import project6 from "../../assets/images/ChatGPT Image Apr 6, 2026, 02_26_50 AM (1).png";
+import project7 from "../../assets/images/ChatGPT Image Feb 15, 2026, 11_48_32 PM (1).png";
+import project8 from "../../assets/images/ChatGPT Image Feb 16, 2026, 12_13_35 AM (1).png";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -112,6 +115,28 @@ export default function Projects() {
                     project_image={project5}
                     project_name={"Note App"}
                     description={"Simple, responsive notes app"}
+                  />
+                </SwiperSlide>
+                 <SwiperSlide>
+                  <ProjectCard
+                    Link={"https://gym-nu-self.vercel.app/"}
+                    project_image={project6}
+                    project_name={"ENGAGE GYM"}
+                    description={"Modern interactive fitness page"}
+                  />
+                </SwiperSlide> <SwiperSlide>
+                  <ProjectCard
+                    Link={"https://architect-house.vercel.app/"}
+                    project_image={project7}
+                    project_name={"Architect House"}
+                    description={"Professional architecture website"}
+                  />
+                </SwiperSlide> <SwiperSlide>
+                  <ProjectCard
+                    Link={"https://bakery-pearl-phi.vercel.app/"}
+                    project_image={project8}
+                    project_name={"Bakery"}
+                    description={"Elegant responsive bakery website"}
                   />
                 </SwiperSlide>
               </Swiper>
