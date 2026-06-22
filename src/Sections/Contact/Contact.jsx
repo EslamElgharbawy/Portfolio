@@ -194,7 +194,7 @@ export default function Contact() {
                   placeholder="Your Message"
                   required
                   rows={6}
-                  className="bg-white font-Jost !pl-4 text-base border-2 border-[#ecebf9] transition-all duration-150 ease-in-out focus:border-second focus:ring-0 focus:outline-none focus:shadow-[0_0_0_1px_#ff6d5a]"
+                  className="bg-white font-Jost !pl-4 text-base border-2 border-[#ecebf9] placeholder:text-gray-500 transition-all duration-150 ease-in-out focus:border-second focus:!ring-0 focus:!outline-0 focus:ring-transparent dark:focus:ring-transparent dark:focus:border-transparent"
                 />
               </div>
 
