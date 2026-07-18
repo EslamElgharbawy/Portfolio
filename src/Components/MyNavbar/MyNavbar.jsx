@@ -48,7 +48,7 @@ export function MyNavbar() {
 
   return (
     <Navbar
-      className={`Nav px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear 
+      className={`Nav !px-0 md:px-4 py-6 bg-transparent fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-linear 
         ${NavBG ? "bg-black  shadow-lg" : "bg-transparent"} ${show ? "translate-y-0" : "-translate-y-full"}`}
     >
       <NavbarBrand>
@@ -124,17 +124,15 @@ export function MyNavbar() {
             key={id}
             href={`#${id}`}
             className={`font-normal text-lg transition-all duration-300  ${
-              active == id
-                ? "text-second"
-                : "text-[#b5b5c0] hover:text-second"
+              active == id ? "text-second" : "text-[#b5b5c0] hover:text-second"
             }`}
           >
             {id}
           </a>
         ))}
       </div>
-      
-        <AnimatePresence mode="wait">
+
+      <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
             initial={{ height: 0 }}
