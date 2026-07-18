@@ -57,22 +57,22 @@ export default function Hero() {
                   href="https://www.facebook.com/share/1AVxLbQ5JM/"
                   className="p-3"
                 >
-                  <i class="fa-brands fa-facebook-f text-2xl text-[#352eac] hover:text-second duration-300"></i>
+                  <i className="fa-brands fa-facebook-f text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/eslam_elgharbawy0?igsh=MjduanhlN200amln"
                   className="p-3"
                 >
-                  <i class="fa-brands fa-instagram text-2xl text-[#352eac] hover:text-second duration-300"></i>
+                  <i className="fa-brands fa-instagram text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BOzl7lXCPRha7ee9yJNO6uA%3D%3D"
                   className="p-3"
                 >
-                  <i class="fa-brands fa-linkedin-in text-2xl text-[#352eac] hover:text-second duration-300"></i>
+                  <i className="fa-brands fa-linkedin-in text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
                 <a href="https://github.com/EslamElgharbawy" className="p-3">
-                  <i class="fa-brands fa-github text-2xl text-[#352eac] hover:text-second duration-300"></i>
+                  <i className="fa-brands fa-github text-2xl text-[#352eac] hover:text-second duration-300"></i>
                 </a>
               </div>
             </div>
