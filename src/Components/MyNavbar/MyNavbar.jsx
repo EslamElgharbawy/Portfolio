@@ -65,6 +65,25 @@ export function MyNavbar() {
           </h1>
         </div>
       </NavbarBrand>
+
+      <div
+        className={
+          "Navlinks font-Jost mr-5 py-3 sm:max-lg:w-full sm:max-lg:hidden lg:flex lg:gap-8 transition-all duration-300 ease-in-out"
+        }
+      >
+        {sections.map((id) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            className={`font-normal text-lg transition-all duration-300  ${
+              active == id ? "text-second" : "text-[#b5b5c0] hover:text-second"
+            }`}
+          >
+            {id}
+          </a>
+        ))}
+      </div>
+
       <div className="right-side xl:order-2 items-center gap-3">
         <div className="hidden lg:block font-Lexend">
           <HireButton />
@@ -114,24 +133,6 @@ export function MyNavbar() {
           </motion.svg>
         </button>
       </div>
-      <div
-        className={
-          "Navlinks font-Jost mr-5 py-3 sm:max-xl:w-full sm:max-xl:hidden xl:flex xl:gap-8 transition-all duration-300 ease-in-out"
-        }
-      >
-        {sections.map((id) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            className={`font-normal text-lg transition-all duration-300  ${
-              active == id ? "text-second" : "text-[#b5b5c0] hover:text-second"
-            }`}
-          >
-            {id}
-          </a>
-        ))}
-      </div>
-
       <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
